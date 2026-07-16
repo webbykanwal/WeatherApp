@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+    width:380px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.container h1{
+    color:white;
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+.subtitle{
+    color:#f1f1f1;
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    flex:1;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    font-size:16px;
+}
+
+.search-box button{
+    padding:14px 22px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+.weather-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.weather-card img{
+    width:100px;
+    height:100px;
+    margin:10px auto;
+}
+
+#cityName{
+    color:#222;
+    margin-bottom:10px;
+}
+
+#temp{
+    font-size:55px;
+    color:#2563eb;
+    margin:10px 0;
+}
+
+#condition{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.details{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.box{
+    flex:1;
+    background:#f5f7ff;
+    padding:15px;
+    border-radius:15px;
+}
+
+.box h4{
+    color:#555;
+    margin-bottom:8px;
+}
+
+.box p{
+    color:#2563eb;
+    font-size:20px;
+    font-weight:bold;
+}
+
+@media(max-width:450px){
+
+.container{
+    width:90%;
+}
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box button{
+    width:100%;
+}
+
+.details{
+    flex-direction:column;
+}
+
+}
